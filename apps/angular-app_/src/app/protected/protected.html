@@ -1,0 +1,9 @@
+    <h2>Protected Area</h2>
+
+    <div *ngIf="tokenParsed">
+      <h3>Access Token Claims</h3>
+      <pre>{{ tokenParsed | json }}</pre>
+
+      <h3>Token Expiration</h3>
+      <p>Expira en: {{ secondsRemaining$ | async }} segundos</p>
+    </div>
