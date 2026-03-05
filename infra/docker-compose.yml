@@ -58,6 +58,8 @@ services:
       LDAP_ORGANISATION: "Training Org"
       LDAP_DOMAIN: "training.local"
       LDAP_ADMIN_PASSWORD: admin
+    volumes:
+      - ./users:/tmp/users
     ports:
       - "389:389"
     restart: always
